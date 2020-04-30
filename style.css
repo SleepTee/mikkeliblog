@@ -159,12 +159,26 @@ body {
 }
 
 .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 120px;
   min-height: 450px;
 }
+.intro .project-image {
+    width: 20%;
+    margin-left: 150px;
+}
+
+.about {
+    width: 50%;
+}
 
 .subheading {
+    width: 100%;
   margin: 0 0 50px;
   text-align: center;
   font-size: 72px;
@@ -206,18 +220,19 @@ body {
 }
 
 .skills {
-    width: 80%;
-    margin-left: 160px;
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 200px;
 }
 
-.skills h3 {
+.navik {
   margin-bottom: 40px;
+    text-align: center;
 }
 
 .skills-list {
-  margin: 0;
   padding: 0;
+    width: 30%
 }
 
 .skills-list dt {
@@ -230,6 +245,10 @@ body {
   background-position: left;
 }
 
+.skill {
+   
+}
+
 .skill-html {
   background-image: url("img/icon-html.svg");
 }
@@ -237,9 +256,51 @@ body {
 .skill-css {
   background-image: url("img/icon-css.svg");
 }
+.skill-js {
+ background-image: url("img/icons8-javascript.svg");
+    background-size: contain;
+}
+.skill-figma {
+background-image: url("img/icons8-figma.svg");
+background-size: contain;
+}
+.skill-git {
+    background-image: url("img/git.png");
+    background-size: contain;
+}
+.skill-less {
+    background-image: url("img/less.png");
+   background-size: contain; 
+}
+
+.skill-react {
+    background-image: url("img/react.png");
+    background-size: contain; 
+    
+}
+
+.infoskills {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoskills p {
+    margin-bottom: 3px;
+}
+
+.infoskills p i {
+    margin-right: 10px;
+    
+}
+.infoskills:hover {
+    filter: drop-shadow(0 0 1px white)
+    
+}
 
 .level {
-  margin: 0 0 40px;
+  margin: 0 0 10px;
   height: 24px;
   text-align: right;
   background-color: #0b0c23;
@@ -279,9 +340,8 @@ body {
 }
 
 .project-image img {
-  width: 620px;
-  height: 420px;
   object-fit: cover;
+  box-shadow: 2px 0px 6px 3px white;
 }
 
 .projects p {
@@ -317,7 +377,7 @@ body {
 }
 
 .page-footer {
-  padding: 40px 0;
+  text-align: center;
   background-color: #212349;
 }
 .keks {
