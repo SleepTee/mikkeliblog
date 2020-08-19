@@ -1,7 +1,7 @@
 body {
   position: relative;
-  margin: 0;
-  min-width: 1408px;
+  width: 100%;
+  margin: 0 auto;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -109,11 +109,12 @@ body {
   position: absolute;
   content: "";
   top: 24px;
-  left: calc(50vw - 32px);
+  left: calc(50vw - 60px);
   width: 800px;
   height: 800px;
   background-image: url("img/hero-image.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-image::after {
@@ -161,20 +162,16 @@ body {
 .intro {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 120px;
-  min-height: 450px;
+    min-height: 600px;
+  justify-content: center;
 }
 .intro .project-image {
-    width: 20%;
-    margin-left: 150px;
+
 }
 
 .about {
-    width: 50%;
+padding-left: 5%;
 }
 
 .subheading {
@@ -221,8 +218,7 @@ body {
 
 .skills {
     display: flex;
-    justify-content: space-around;
-    margin: 30px 200px;
+    justify-content: center;
 }
 
 .navik {
@@ -232,7 +228,7 @@ body {
 
 .skills-list {
   padding: 0;
-    width: 30%
+  width: 25%
 }
 
 .skills-list dt {
@@ -280,7 +276,8 @@ background-size: contain;
 }
 
 .infoskills {
-    width: 50%;
+    width: 40%;
+  padding-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,7 +292,7 @@ background-size: contain;
     
 }
 .infoskills:hover {
-    filter: drop-shadow(0 0 1px white)
+
     
 }
 
@@ -380,13 +377,20 @@ background-size: contain;
   text-align: center;
   background-color: #212349;
 }
-.keks {
-    text-align: center;
-    margin-bottom: 30px;
-}
+
 .working {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.working img {
+  width: 80%;
 }
 .working1 {
-    float: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 50%;
+
 }
