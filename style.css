@@ -162,16 +162,17 @@ body {
 .intro {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     min-height: 600px;
   justify-content: center;
 }
-.intro .project-image {
 
+.intro .project-image {
+  width: 30%;
 }
 
-.about {
-padding-left: 5%;
+.about h3 {
+  padding-top: 10px;
 }
 
 .subheading {
@@ -333,10 +334,12 @@ background-size: contain;
 }
 
 .project-image {
-  text-align: center;
+  width: 80%;
 }
 
 .project-image img {
+  width: 100%;
+  height: 400px;
   object-fit: cover;
   box-shadow: 2px 0px 6px 3px white;
 }
@@ -383,9 +386,6 @@ background-size: contain;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.working img {
-  width: 80%;
-}
 .working1 {
   display: flex;
   flex-direction: column;
@@ -394,3 +394,4 @@ background-size: contain;
   width: 50%;
 
 }
+
