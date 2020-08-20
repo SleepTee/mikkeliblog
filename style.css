@@ -18,6 +18,8 @@ body {
 }
 
 .page-header {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 40px 0;
 }
@@ -88,6 +90,20 @@ body {
 .page-header a:active,
 .page-footer a:active {
   opacity: 0.5;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.social-icon a {
+  width: 55px;
+  height: 27px;
+
+}
+a i {
+  font-size: 30px;
 }
 
 .hero-image {
