@@ -111,19 +111,14 @@ a i {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 200px;
   height: 100vh;
+  padding-top: 200px;
   background-image: url("img/bg-html.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 48px;
 }
 
-
-/*.hero-image .container {
-  display: flex;
-  flex-direction: column;
-}*/
 
 .hero-image::before {
   position: absolute;
@@ -182,7 +177,6 @@ a i {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    min-height: 600px;
   justify-content: center;
 }
 
@@ -248,7 +242,7 @@ a i {
 
 .skills-list {
   padding: 0;
-  width: 25%
+  width: 30%
 }
 
 .skills-list dt {
@@ -296,7 +290,6 @@ background-size: contain;
 }
 
 .infoskills {
-    width: 40%;
   padding-left: 5%;
     display: flex;
     flex-direction: column;
@@ -425,6 +418,11 @@ background-size: contain;
   .hero-image:before {
     display: none;
   }
+  .hero-image {
+    padding-top: 0;
+    text-align: center;
+    height: 70vh;
+  }
 
 }
 
@@ -433,7 +431,7 @@ background-size: contain;
   .hero-image {
     padding-top: 0;
     text-align: center;
-    height: 70vh;
+    height: 50vh;
 
   }
   .hero-image:before {
@@ -445,6 +443,12 @@ background-size: contain;
   .intro .project-image {
     display: none;
   }
+  .subheading {
+    font-size: 60px;
+  }
+  .infoskills {
+    font-size: 15px;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -453,7 +457,7 @@ background-size: contain;
   .hero-image {
     padding-top: 0;
     text-align: center;
-    height: 70vh;
+    height: 60vh;
 
   }
   .hero-image:before {
@@ -477,6 +481,12 @@ background-size: contain;
   .page-header a {
     margin-right: 20px;
   }
+  .skills {
+    flex-wrap: wrap;
+  }
+  .skills-list {
+    width: 80%;
+  }
 }
 
 /* Landscape phones and smaller */
@@ -486,5 +496,10 @@ background-size: contain;
   }
   .page-header a {
     margin-right: 5px;
+  }
+  .hero-image {
+    padding-top: 0;
+    text-align: center;
+
   }
 }
