@@ -118,7 +118,9 @@ a i {
   background-position-x: center;
   background-position-y: 48px;
 }
-
+.promo_artem {
+  margin-left: 5%;
+}
 
 .hero-image::before {
   position: absolute;
@@ -180,12 +182,21 @@ a i {
   justify-content: center;
 }
 
-.intro .project-image {
+/*.intro .project-image {
   width: 30%;
+}*/
+
+.about {
+  display: flex;
+  margin-left: 5%;
 }
 
 .about h3 {
   padding-top: 10px;
+}
+.about p {
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .subheading {
@@ -424,6 +435,11 @@ background-size: contain;
     height: 70vh;
   }
 
+  .about p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
 }
 
 /* Portrait tablets and small desktops */
@@ -448,6 +464,10 @@ background-size: contain;
   }
   .infoskills {
     font-size: 15px;
+  }
+  .about p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -486,6 +506,11 @@ background-size: contain;
   }
   .skills-list {
     width: 80%;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
